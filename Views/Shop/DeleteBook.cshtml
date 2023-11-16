@@ -1,14 +1,11 @@
 ﻿@model Shop1.Entities.Books_Catalog
 
 @{
-    ViewBag.Title = "DeleteBook";
+    ViewBag.Title = "Удалить";
 }
 
-<h2>DeleteBook</h2>
-
-<h3>Are you sure you want to delete this?</h3>
 <div>
-    <h4>Books_Catalog</h4>
+    <h2>Удалить</h2>
     <hr />
     <dl class="dl-horizontal">
         <dt>
@@ -49,8 +46,8 @@
         @Html.AntiForgeryToken()
 
         <div class="form-actions no-color">
-            <input type="submit" value="Delete" class="btn btn-default" /> |
-            @Html.ActionLink("Back to List", "ListOfBooks")
+            <input type="submit" value="Удалить" class="btn btn-default" /> |
+            @Html.ActionLink("Назад", "ListOfBooks")
         </div>
     }
 </div>
